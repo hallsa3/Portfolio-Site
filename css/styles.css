@@ -18,8 +18,10 @@ body {
   font-family: var(--primary-font);
   font-weight: 400;
   font-size: 16px;
+
   /* Sets the font size to 16px */
   line-height: 1.6;
+
   /* Sets the line height to 1.6 */
 }
 
@@ -42,12 +44,13 @@ a {
   color: var(--primary-color);
 }
 
-a:visited{
+a:visited {
   /* visited link */
   color: #05676e;
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
   /* No underlining when hovering over a link */
   text-decoration: var(--primary-text-decoration);
 }
@@ -57,30 +60,38 @@ a:active {
   color: #489c79;
 }
 
-.button, button {
+.button,
+button {
   /* overwrites browser defaults and resets the border */
   border: none;
   display: inline-block;
+
   /* takes the font from the outer container */
   font-family: inherit;
+
   /* styles the button */
   background-color: #357b70;
   color: white;
   text-decoration: var(--primary-text-decoration);
+
   /* adds spacing to the button */
   padding: 10px;
   border-radius: 3px;
+
   /* width of the border, type, color */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   transition: 0.2s opacity;
 }
 
-.button:hover, .button:focus,
-button:hover, button:focus {
+.button:hover,
+.button:focus,
+button:hover,
+button:focus {
   /* lets the mouse appear as a hand when hovering over the button */
   cursor: pointer;
+
   /* reduces the opacity of the button to 80% */
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .button_secondary {
@@ -160,7 +171,7 @@ table {
 /* Grid fallback */
 .grid__item {
   display: inline-block;
-  width: 33%
+  width: 33%;
 }
 
 /* Styling CSS grid */
@@ -173,6 +184,7 @@ table {
 .grid__item {
   background-color: #d3d3d3;
   padding: 15px;
+
   /* Set width to auto */
   width: auto;
 }
@@ -198,10 +210,12 @@ table {
   .grid {
     grid-gap: 10px;
   }
+
   .grid__item:last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
   }
+
   h1 {
     font-size: 22px;
   }
@@ -211,11 +225,13 @@ table {
   0% {
     fill: #edc655;
   }
+
   50% {
     fill: #fcffad;
   }
+
   100% {
-    fill: #f76414
+    fill: #f76414;
   }
 }
 
@@ -227,6 +243,7 @@ table {
   from {
     transform: translate(0, 50px);
   }
+
   to {
     transform: translate(200px, 50px);
   }
@@ -240,6 +257,7 @@ table {
   from {
     transform: translate(446px, 48px);
   }
+
   to {
     transform: translate(100px, 48px);
   }
