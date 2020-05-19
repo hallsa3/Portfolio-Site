@@ -192,6 +192,11 @@ a.button {
   margin: 0 auto;
 }
 
+.error-message {
+  color: red;
+  font-size: 1em;
+}
+
 /* Work Page */
 h1.work {
   margin-left: 20px;
